@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Мои задачи</h1>
+<div class="stats-bar">
+    <div class="progress-container">
+        <div class="progress-bar" style="width: {{ completion_percent }}%"></div>
+        <span class="progress-text">{{ completed_tasks }}/{{ total_tasks }} выполнено ({{ completion_percent }}%)</span>
+    </div>
+</div>
+<div class="filters">
+    <a href="{{ url_for('tasks', status='all', priority=priority_filter) }}"
+        class="filter-btn {% if status_filter == 'all' %}active{% endif %}">Все</a>
+    <a href="{{ url_for('tasks', status='active', priority=priority_filter) }}"
+        class="filter-btn {% if status_filter == 'active' %}active{% endif %}">Активные</a>
+    <a href="{{ url_for('tasks', status='completed', priority=priority_filter) }}"
+        class="filter-btn {% if status_filter == 'completed' %}active{% endif %}">Выполненные</a>
+</div>
+<div class="filters">
+    <a href="{{ url_for('tasks', status=status_filter, priority='all') }}"
+        class="filter-btn priority-all {% if priority_filter == 'all' %}active{% endif %}">Все приоритеты</a>
+    <a href="{{ url_for('tasks', status=status_filter, priority='1') }}"
+        class="filter-btn priority-high {% if priority_filter == '1' %}active{% endif %}">Высокий</a>
+    <a href="{{ url_for('tasks', status=status_filter, priority='2') }}"
+        class="filter-btn priority-medium {% if priority_filter == '2' %}active{% endif %}">Средний</a>
+    <a href="{{ url_for('tasks', status=status_filter, priority='3') }}"
+        class="filter-btn priority-low {% if priority_filter == '3' %}active{% endif %}">Низкий</a>
+</div>
+<div class="task-list">
+    {% for task in tasks %}
+    <div class="task-card priority-{{ task.priority }} {% if task.is_done %}completed{% endif %}">
+        <div class="task-header">
+            <h3>{{ task.title }}</h3>
+            <span class="priority-badge">{{ task.priority_text }}</span>
+        </div>
+        {% if task.description %}
+        <p class="task-description">{{ task.description[:100] }}{% if task.description|length > 100 %}...{% endif %}</p>
+        {% endif %}
+        {% if task.due_date %}
+        <p class="task-due-date">Срок: {{ task.due_date.strftime('%d.%m.%Y') }}</p>
+        {% endif %}
+        <div class="task-actions">
+            <form action="{{ url_for('toggle_task', id=task.id) }}" method="POST" style="display:inline">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit" class="btn-toggle">
+                    {% if task.is_done %}Вернуть{% else %}Выполнить{% endif %}
+                </button>
+            </form>
+            <a href="{{ url_for('edit_task', id=task.id) }}" class="btn-edit">Редактировать</a>
+            <form action="{{ url_for('delete_task', id=task.id) }}" method="POST" style="display:inline"
+                onsubmit="return confirm('Удалить задачу?')">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit" class="btn-delete">Удалить</button>
+            </form>
+        </div>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <p>У вас пока нет задач</p>
+        <a href="{{ url_for('new_task') }}" class="btn-new">Создать первую задачу</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

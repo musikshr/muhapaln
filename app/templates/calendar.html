@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="calendar-container">
+    <div class="calendar-header">
+        <h1>Календарь задач</h1>
+        <div class="calendar-nav">
+            <a href="{{ url_for('calendar', year=prev_year, month=prev_month) }}" class="btn-nav">← {{ prev_month_name
+                }}</a>
+            <span class="current-month">{{ month_name }} {{ year }}</span>
+            <a href="{{ url_for('calendar', year=next_year, month=next_month) }}" class="btn-nav">{{ next_month_name }}
+                →</a>
+        </div>
+    </div>
+    <div class="calendar">
+        <div class="calendar-weekdays">
+            <div class="weekday">ПН</div>
+            <div class="weekday">ВТ</div>
+            <div class="weekday">СР</div>
+            <div class="weekday">ЧТ</div>
+            <div class="weekday">ПТ</div>
+            <div class="weekday">СБ</div>
+            <div class="weekday">ВС</div>
+        </div>
+        <div class="calendar-days">
+            {% for week in calendar_data %}
+            <div class="calendar-row">
+                {% for day in week %}
+                {% if day == 0 %}
+                <div class="calendar-day"></div>
+                {% else %}
+                <div
+                    class="calendar-day {% if day == today_day and year == today_year and month == today_month %}today{% endif %}">
+                    <div class="day-number">{{ day }}</div>
+                    <div class="day-tasks">
+                        {% for task in tasks_by_date[day] %}
+                        <div class="task-marker task-priority-{{ task.priority }}"
+                            title="{{ task.title }} - {{ task.priority_text }}" onclick="showTaskDetail({{ task.id }})">
+                            {{ task.title[:12] }}{% if task.title|length > 12 %}...{% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="calendar-priority">
+        <h3>Приоритеты задач:</h3>
+        <div class="priority-items">
+            <div class="priority-item">
+                <div class="priority-color" style="background: #e53e3e;"></div>
+                <span>Высокий</span>
+            </div>
+            <div class="priority-item">
+                <div class="priority-color" style="background: #ed8936;"></div>
+                <span>Средний</span>
+            </div>
+            <div class="priority-item">
+                <div class="priority-color" style="background: #48bb78;"></div>
+                <span>Низкий</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="taskModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div id="modalContent"></div>
+    </div>
+</div>
+<script>
+    function showTaskDetail(taskId) {
+        fetch(`/api/task/${taskId}`)
+            .then(response => response.json())
+            .then(task => {
+                const modalContent = document.getElementById('modalContent');
+                modalContent.innerHTML = `
+                    <h2>${task.title}</h2>
+                    <div class="modal-task-priority" style="border-left-color: ${task.priority_color}">
+                        <strong>Приоритет:</strong> ${task.priority_text}
+                    </div>
+                    <p><strong>Описание:</strong></p>
+                    <p>${task.description || 'Нет описания'}</p>
+                    <p><strong>Статус:</strong> ${task.is_done ? '✅ Выполнена' : '⏳ Активна'}</p>
+                    ${task.due_date ? `<p><strong>Срок:</strong> ${task.due_date}</p>` : ''}
+                    <div class="modal-actions">
+                        <a href="/task/${task.id}/edit" class="btn btn-primary">Редактировать</a>
+                        <button onclick="closeModal()" class="btn btn-secondary">Закрыть</button>
+                    </div>
+                `;
+                document.getElementById('taskModal').style.display = 'flex';
+            });
+    }
+
+    function closeModal() {
+        document.getElementById('taskModal').style.display = 'none';
+    }
+    window.onclick = function (event) {
+        const modal = document.getElementById('taskModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+{% endblock %}

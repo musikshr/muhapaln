@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Добро пожаловать в TaskPlanner</h1>
+    <p>Простй и удобный планировщик задач для повседневных дел</p>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Управляйте задачами</h3>
+            <p>Создавайте, редактируйте и удаляйте задачи</p>
+        </div>
+        <div class="feature">
+            <h3>Приоритеты</h3>
+            <p>Высокий, средний или низкий приоритет</p>
+        </div>
+        <div class="feature">
+            <h3>Сроки выполнения</h3>
+            <p>Не пропускайте дедлайны</p>
+        </div>
+        <div class="feature">
+            <h3>Статистика</h3>
+            <p>Отслеживайте свой прогресс</p>
+        </div>
+    </div>
+
+    <div class="first-buttons">
+        <a href="{{ url_for('register') }}" class="btn btn-primary">Начать</a>
+        <a href="{{ url_for('login') }}" class="btn btn-secondary">Войти</a>
+    </div>
+</div>
+{% endblock %}
