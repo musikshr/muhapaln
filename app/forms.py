@@ -8,7 +8,6 @@ logger = logging.getLogger(__name__)
 
 
 def password_complexity(password):
-    """Проверяет сложность пароля и возвращает (is_valid, message)"""
     errors = []
 
     if len(password) < 8:
@@ -36,7 +35,8 @@ class PasswordComplexity:
             if self.message:
                 raise ValidationError(self.message)
             raise ValidationError(msg)
-        logger.info(f'Password complexity check passed for user registration')
+        logger.info(
+            f'Проверка сложности пароля при регистрации пользователя пройдена успешно.')
 
 
 class RegistrationForm(FlaskForm):

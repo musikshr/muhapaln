@@ -1,85 +1,58 @@
-2026-06-01 13:33:47,437 - app.routes - INFO - User muha created task ID 7: "помыть по"
-2026-06-01 13:33:47,449 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
-2026-06-01 13:33:47,469 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:33:48,470 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:33:52,803 - app.routes - INFO - User muha created task ID 8: "ыифу"
-2026-06-01 13:33:52,818 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
-2026-06-01 13:33:52,838 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:33:54,155 - app.routes - INFO - User muha viewed calendar for 2026-6 with 4 tasks
-2026-06-01 13:33:54,179 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:33:59,941 - app.routes - INFO - User muha viewed calendar for 2026-6 with 4 tasks
-2026-06-01 13:33:59,968 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:34:01,640 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
-2026-06-01 13:34:01,669 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:34:02,587 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:34:11,686 - app.routes - INFO - User muha created task ID 9: "уфкп"
-2026-06-01 13:34:11,700 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
-2026-06-01 13:34:11,720 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:34:13,052 - app.routes - INFO - User muha viewed calendar for 2026-6 with 5 tasks
-2026-06-01 13:34:13,071 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:34:25,715 - app.routes - ERROR - 404 error: /.well-known/appspecific/com.chrome.devtools.json
-2026-06-01 13:34:55,264 - app.routes - INFO - User muha viewed calendar for 2026-6 with 5 tasks
-2026-06-01 13:34:55,288 - app.routes - ERROR - 404 error: /.well-known/appspecific/com.chrome.devtools.json
-2026-06-01 13:34:55,308 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-01 13:35:32,526 - app.routes - INFO - User muha viewed calendar for 2026-6 with 5 tasks
-2026-06-01 13:35:32,561 - app.routes - ERROR - 404 error: /.well-known/appspecific/com.chrome.devtools.json
-2026-06-01 13:35:32,605 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:31:47,878 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:31:50,939 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:31:54,977 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:31:59,839 - app.routes - WARNING - Failed login attempt for username: test
-2026-06-09 11:31:59,864 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:05,049 - app.routes - WARNING - Failed login attempt for username: test@mail.ru
-2026-06-09 11:32:05,081 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:10,048 - app.routes - WARNING - Failed login attempt for username: test
-2026-06-09 11:32:10,084 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:12,031 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:31,017 - app.routes - INFO - New user registered: musik (email: musik@mail.ru)
-2026-06-09 11:32:31,090 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:41,998 - app.routes - INFO - User musik logged in successfully
-2026-06-09 11:32:42,009 - app.routes - INFO - User musik viewed tasks list (status=all, priority=all)
-2026-06-09 11:32:42,062 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:46,912 - app.routes - INFO - User musik viewed tasks list (status=all, priority=all)
-2026-06-09 11:32:46,937 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:47,743 - app.routes - INFO - User musik viewed calendar for 2026-6 with 0 tasks
-2026-06-09 11:32:47,816 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:48,884 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:32:59,346 - app.routes - INFO - User musik created task ID 10: "wefgergwerger"
-2026-06-09 11:32:59,356 - app.routes - INFO - User musik viewed tasks list (status=all, priority=all)
-2026-06-09 11:32:59,387 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:06,533 - app.routes - INFO - User musik viewed tasks list (status=all, priority=1)
-2026-06-09 11:33:06,558 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:07,432 - app.routes - INFO - User musik viewed tasks list (status=active, priority=1)
-2026-06-09 11:33:07,454 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:08,527 - app.routes - INFO - User musik viewed tasks list (status=active, priority=all)
-2026-06-09 11:33:08,551 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:09,321 - app.routes - INFO - User musik viewed tasks list (status=active, priority=2)
-2026-06-09 11:33:09,346 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:10,628 - app.routes - INFO - User musik viewed tasks list (status=active, priority=all)
-2026-06-09 11:33:10,653 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:33:12,092 - app.routes - INFO - User musik logged out
-2026-06-09 11:33:12,118 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:42:25,774 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:42:27,183 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:42:53,657 - app.forms - INFO - Password complexity check passed for user registration
-2026-06-09 11:42:53,658 - app.routes - WARNING - Registration validation errors: {'password2': ['Пароли не совпадают']}
-2026-06-09 11:42:53,729 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:44:13,901 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:44:14,607 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:44:42,821 - app.routes - WARNING - Registration validation errors: {'password': ['Пароль должен содержать: хотя бы одну заглавную букву, хотя бы одну строчную букву, хотя бы один специальный символ (!@#$%^&*() etc.)']}
-2026-06-09 11:44:42,853 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:44:58,672 - app.routes - WARNING - Registration validation errors: {'password': ['Пароль должен содержать: хотя бы одну заглавную букву, хотя бы одну строчную букву, хотя бы один специальный символ (!@#$%^&*() etc.)']}
-2026-06-09 11:44:58,735 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:45:10,451 - app.routes - WARNING - Registration validation errors: {'password': ['Пароль должен содержать: хотя бы одну заглавную букву, хотя бы одну строчную букву, хотя бы один специальный символ (!@#$%^&*() etc.)']}
-2026-06-09 11:45:10,488 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:45:39,313 - app.forms - INFO - Password complexity check passed for user registration
-2026-06-09 11:45:39,412 - app.routes - INFO - New user registered: muha1 (email: muha1@mail.ru) with strong password
-2026-06-09 11:45:39,447 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:45:52,146 - app.routes - INFO - User muha1 logged in successfully
-2026-06-09 11:45:52,155 - app.routes - INFO - User muha1 viewed tasks list (status=all, priority=all)
-2026-06-09 11:45:52,189 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:46:32,803 - app.routes - INFO - User muha1 logged out
-2026-06-09 11:46:32,828 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:46:34,597 - app.routes - ERROR - 404 error: /favicon.ico
-2026-06-09 11:46:58,835 - app.routes - WARNING - Registration validation errors: {'password': ['Пароль должен содержать: хотя бы один специальный символ (!@#$%^&*() etc.)']}
-2026-06-09 11:46:58,866 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:04:47,101 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:04:49,134 - app.routes - WARNING - Failed login attempt for username: test@mail.ru
+2026-06-09 20:04:49,166 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:04:56,763 - app.routes - WARNING - Failed login attempt for username: test2@mail.ru
+2026-06-09 20:04:56,796 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:04:58,201 - app.routes - WARNING - Failed login attempt for username: test2@mail.ru
+2026-06-09 20:04:58,231 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:02,383 - app.routes - WARNING - Failed login attempt for username: test@mail.ru
+2026-06-09 20:05:02,417 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:05,496 - app.routes - INFO - User muha logged in successfully
+2026-06-09 20:05:05,508 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:05,538 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:11,315 - app.routes - INFO - User muha viewed tasks list (status=active, priority=all)
+2026-06-09 20:05:11,343 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:11,852 - app.routes - INFO - User muha viewed tasks list (status=active, priority=1)
+2026-06-09 20:05:11,875 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:12,879 - app.routes - INFO - User muha viewed tasks list (status=active, priority=all)
+2026-06-09 20:05:12,903 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:15,098 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:15,126 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:15,891 - app.routes - INFO - User muha viewed calendar for 2026-6 with 5 tasks
+2026-06-09 20:05:15,926 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:19,115 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:19,139 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:24,227 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:32,179 - app.routes - INFO - User muha created task ID 11: "aldkfae"
+2026-06-09 20:05:32,192 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:32,210 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:33,642 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:34,093 - app.routes - INFO - User muha viewed calendar for 2026-6 with 6 tasks
+2026-06-09 20:05:34,112 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:39,943 - app.routes - INFO - User muha viewed calendar for 2026-7 with 0 tasks
+2026-06-09 20:05:39,993 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:40,612 - app.routes - INFO - User muha viewed calendar for 2026-6 with 6 tasks
+2026-06-09 20:05:40,637 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:43,399 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:43,426 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:44,942 - app.routes - INFO - User muha viewed tasks list (status=active, priority=all)
+2026-06-09 20:05:44,963 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:45,741 - app.routes - INFO - User muha viewed tasks list (status=active, priority=1)
+2026-06-09 20:05:45,759 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:46,244 - app.routes - INFO - User muha viewed tasks list (status=active, priority=2)
+2026-06-09 20:05:46,269 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:48,129 - app.routes - INFO - User muha viewed tasks list (status=active, priority=3)
+2026-06-09 20:05:48,154 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:49,012 - app.routes - INFO - User muha viewed tasks list (status=completed, priority=3)
+2026-06-09 20:05:49,037 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:49,663 - app.routes - INFO - User muha viewed tasks list (status=all, priority=3)
+2026-06-09 20:05:49,686 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:50,399 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:50,425 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:51,479 - app.routes - INFO - User muha marked task 9 as completed
+2026-06-09 20:05:51,494 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:51,517 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:52,311 - app.routes - INFO - User muha viewed tasks list (status=completed, priority=all)
+2026-06-09 20:05:52,328 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-09 20:05:54,561 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
+2026-06-09 20:05:54,580 - app.routes - ERROR - 404 error: /favicon.ico
