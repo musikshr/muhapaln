@@ -56,3 +56,4 @@
 2026-06-09 20:05:52,328 - app.routes - ERROR - 404 error: /favicon.ico
 2026-06-09 20:05:54,561 - app.routes - INFO - User muha viewed tasks list (status=all, priority=all)
 2026-06-09 20:05:54,580 - app.routes - ERROR - 404 error: /favicon.ico
+2026-06-12 00:56:39,974 - app.routes - ERROR - 404 error: /favicon.ico
